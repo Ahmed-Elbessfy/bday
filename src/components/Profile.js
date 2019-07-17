@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import cover from "../media/cover.jpeg";
 import profilePic from "../media/profile.png";
+import Gifts from './Gifts'
 class Profile extends Component {
   render() {
     return (
@@ -30,6 +31,7 @@ class Profile extends Component {
             </div>
           </div>
         </header>
+        <Gifts />
       </React.Fragment>
     );
   }
