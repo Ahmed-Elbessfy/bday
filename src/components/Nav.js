@@ -5,18 +5,21 @@ function Nav() {
   return (
     <nav
       className="navbar fixed-top bg-white"
-      style={{ minHeight: "10vh", borderBottom: "2px solid #dcdcdc" }}
+      style={ { minHeight: "10vh", borderBottom: "2px solid #dcdcdc" } }
     >
       <div className="container">
+        {/* Navbar Brand */ }
         <div className="brand text-capitalize h1 text-danger">bday</div>
-        <ul className="list-unstyled mb-0" style={{ display: "flex" }}>
+        {/* Navbar Links */ }
+        <ul className="list-unstyled mb-0" style={ { display: "flex" } }>
           <li className="mr-3">
+            {/* Link to Profile Component which is default */ }
             <NavLink
               exact
               to="/"
-              activeClassName="text-danger"
-              className="text-capitalize text-secondary"
-              style={{ fontSize: "1.2rem" }}
+              activeClassName="text-danger border-bottom border-right border-danger"
+              className="text-capitalize text-secondary p-1"
+              style={ { fontSize: "1.2rem" } }
             >
               users
             </NavLink>
@@ -24,9 +27,9 @@ function Nav() {
           <li className="mr-3">
             <NavLink
               to="#"
-              activeClassName="text-danger"
-              className="text-capitalize text-secondary"
-              style={{ fontSize: "1.2rem" }}
+              activeClassName="text-danger border-bottom border-right border-danger"
+              className="text-capitalize text-secondary p-1"
+              style={ { fontSize: "1.2rem" } }
             >
               gifts
             </NavLink>
@@ -34,9 +37,9 @@ function Nav() {
           <li className="mr-3">
             <NavLink
               to="#"
-              activeClassName="text-danger"
-              className="text-capitalize text-secondary"
-              style={{ fontSize: "1.2rem" }}
+              activeClassName="text-danger border-bottom border-right border-danger"
+              className="text-capitalize text-secondary p-1"
+              style={ { fontSize: "1.2rem" } }
             >
               notifications
             </NavLink>
@@ -44,9 +47,9 @@ function Nav() {
           <li className="mr-3">
             <NavLink
               to="#"
-              activeClassName="text-danger"
-              className="text-capitalize text-secondary"
-              style={{ fontSize: "1.2rem" }}
+              activeClassName="text-danger border-bottom border-right border-danger"
+              className="text-capitalize text-secondary p-1"
+              style={ { fontSize: "1.2rem" } }
             >
               profile
             </NavLink>

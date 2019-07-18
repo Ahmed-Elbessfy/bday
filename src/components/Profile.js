@@ -23,7 +23,7 @@ class Profile extends Component {
                       <img
                         src={user.profilePic}
                         alt="cover"
-                        className="profile-pic rounded-circle img-thumbnail w-100"
+                        className="rounded-circle img-thumbnail w-100"
                         style={{ maxWidth: "20rem" }}
                       />
                     </div>
@@ -54,7 +54,7 @@ class Profile extends Component {
                   </div>
                 </div>
               </header>
-              <Gifts userName="ahmed taha" userPic={user.profilePic} />
+              <Gifts />
             </React.Fragment>
           );
         }}
