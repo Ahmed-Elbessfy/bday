@@ -14,7 +14,7 @@ function GiftPage(props) {
           <div className="container">
             <Link
               to="/"
-              className="btn btn-danger btn-lg rounded-pill px-5 ml-3 text-capitalize my-5"
+              className="btn btn-danger btn-lg rounded-pill px-5 text-capitalize my-5"
             >
               go back
             </Link>
@@ -22,7 +22,7 @@ function GiftPage(props) {
               <img
                 src={user.profilePic}
                 style={{ width: "6rem" }}
-                className="rounded-circle m-4"
+                className="rounded-circle mr-4 my-4"
                 alt={user.name}
               />
               <span className="text-secondary text-capitalize h4 ">
@@ -30,11 +30,11 @@ function GiftPage(props) {
               </span>
             </div>
             <div className="row">
-              <div className="col-md-6 text-center shadow p-0 my-4">
+              <div className="col-lg-5 text-center shadow p-0 my-4 ">
                 <img src={gift.img} alt={gift.name} className="w-100 h-100" />
               </div>
-              <div className="col-md-6 pl-5 py-2">
-                <p className="h1 text-secondary my-2 text-capitalize text-sm-center">
+              <div className="col-lg-6  offset-lg-1  py-2">
+                <p className="h1 text-secondary my-2 text-capitalize text-center text-lg-left">
                   {gift.name}
                 </p>
                 <div className="row my-5">
