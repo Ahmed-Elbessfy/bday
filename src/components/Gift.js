@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Gift(props) {
-  const { gift } = props;
+  const { gift, user } = props;
   return (
     <div className="col-sm-6 col-lg-3 my-4">
       <Link className="card" to={`/gift/${gift.id}`}>
@@ -19,7 +19,7 @@ function Gift(props) {
               {gift.name}
             </span>
             <img
-              src={props.userPic}
+              src={user.profilePic}
               alt="user"
               style={{ width: "3rem", marginLeft: "auto" }}
               className="rounded-circle"

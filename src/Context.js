@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import profileUserPic from './media/profile.png'
 
 const Context = React.createContext();
 
 class Provider extends Component {
   state = {
+    profileUser: {
+      name: 'ahmed taha',
+      profilePic: `${profileUserPic}`
+    },
     wishList: [{
       id: 1,
       name: 'gift 1',
