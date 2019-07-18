@@ -1,18 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Gift(props) {
-  const {gift } = props
+  const { gift } = props;
   return (
     <div className="col-sm-6 col-lg-3 my-4">
-      <div className="card">
+      <Link className="card" to={`/gift/${gift.id}`}>
         <img className="card-img-top" src={gift.img} alt="gift avatar" />
         <div className="card-body">
-          <p className="card-text">
-            <span className="text-danger">{gift.giftName}</span>
-            <img src={props.userPic} alt="user" />
+          <p
+            className="card-text"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <span
+              className="text-danger font-weight-bold"
+              style={{ fontSize: "1.5rem" }}
+            >
+              {gift.name}
+            </span>
+            <img
+              src={props.userPic}
+              alt="user"
+              style={{ width: "3rem", marginLeft: "auto" }}
+              className="rounded-circle"
+            />
           </p>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
