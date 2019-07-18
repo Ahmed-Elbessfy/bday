@@ -15,19 +15,20 @@ class Profile extends Component {
                   src={cover}
                   alt="cover"
                   className="mb-4"
-                  style={{ width: "100%", height: "40vw", objectFit: "cover" }}
+                  style={{ width: "100%", height: "40vh", objectFit: "cover" }}
                 />
                 <div className="container py-2 mb-4">
                   <div className="row align-items-center">
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-4 text-center">
                       <img
                         src={user.profilePic}
                         alt="cover"
-                        className="profile-pic rounded-circle img-thumbnail"
+                        className="profile-pic rounded-circle img-thumbnail w-100"
+                        style={{ maxWidth: "20rem" }}
                       />
                     </div>
                     <div className="col-md-8">
-                      <div className="user-info ">
+                      <div className="user-info text-center text-md-left">
                         <p className="h3 text-secondary text-capitalize">
                           {user.name}
                         </p>
@@ -36,10 +37,16 @@ class Profile extends Component {
                           followers
                         </p>
                         <p className="text-secondary">#neverGiveUp</p>
-                        <button className="btn btn-outline-secondary text-danger btn-lg rounded-pill px-5 mr-3 text-capitalize">
+                        <button
+                          className="btn btn-outline-danger btn-lg rounded-pill px-5 ml-0 mr-3 my-2 text-capitalize"
+                          style={{ minWidth: "13rem" }}
+                        >
                           follow
                         </button>
-                        <button className="btn btn-danger btn-lg rounded-pill px-5 ml-3 text-capitalize">
+                        <button
+                          className="btn btn-danger btn-lg rounded-pill px-5 ml-0 mr-3 my-2 text-capitalize"
+                          style={{ minWidth: "13rem" }}
+                        >
                           gift group
                         </button>
                       </div>
