@@ -1,0 +1,11 @@
+/* extra small style rules for Nav */
+@media screen and (max-width: 576px) {
+  nav .brand {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+}
