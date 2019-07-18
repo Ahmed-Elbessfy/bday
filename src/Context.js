@@ -46,7 +46,7 @@ class Provider extends Component {
       },
       {
         id: 3,
-        name: "maldives vacation",
+        name: "maldives",
         img: `${maldives}`,
         likes: [
           { name: "jhon", pic: `${likeUser5}` },
@@ -97,8 +97,8 @@ class Provider extends Component {
 
   render() {
     return (
-      <Context.Provider value={this.state}>
-        {this.props.children}
+      <Context.Provider value={ this.state }>
+        { this.props.children }
       </Context.Provider>
     );
   }
