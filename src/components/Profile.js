@@ -31,7 +31,7 @@ class Profile extends Component {
             </div>
           </div>
         </header>
-        <Gifts />
+        <Gifts userName="ahmed taha" userPic={ profilePic } />
       </React.Fragment>
     );
   }

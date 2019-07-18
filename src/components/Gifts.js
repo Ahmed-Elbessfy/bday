@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
-import { Consumer } from '../Context'
+import { Consumer } from '../Context';
+import Gift from './Gift'
 
 class Gifts extends Component {
   render() {
     return (
       <Consumer >
         { value => {
-          console.log(value.wishList)
           const { wishList: gifts } = value
-          gifts.map(gift => {
-            console.log(gift)
-          })
-
+          return (
+            <div className='container'>
+              <div className='row'>
+                { gifts.map(gift => {
+                  return <Gift key={gift.id} gift={ gift } userName={ this.props.userName } userPic={ this.props.userPic } />
+                }) }
+              </div>
+            </div>
+          )
         } }
-
       </Consumer >
     );
   }
