@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Profile from './components/Profile'
 import GiftPage from './components/GiftPage'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { Provider } from './Context'
 
 
